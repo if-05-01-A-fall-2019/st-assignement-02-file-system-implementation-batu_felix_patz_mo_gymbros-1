@@ -12,7 +12,7 @@ For example: 1 2 3 4 5 6 7 8 9 10
 We may not read the blocks sequenteially from 1-8. We should read the blocks from 1-3 and then from 7-8 and we may not read 4-6.
 
 # What has to be done if you want to access foo.txt randomly (seek())?
-We need a method to get easy and fast acces to this file and we must take care of where the blocks of the file beginns were the blocks are interrupted and where they continue.
+We need a method seek() to get easy and fast acces to this file and we must take care of where the blocks of the file beginns were the blocks are interrupted and where they continue.
 
 # What has to be done when the file size decreases? Especially take care if it needs fewer blocks
 We need to check which blocks are affected and free the affected blocks.  
