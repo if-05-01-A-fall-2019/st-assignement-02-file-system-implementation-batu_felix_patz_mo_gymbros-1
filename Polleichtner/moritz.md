@@ -16,9 +16,10 @@ first of all we need enough memory, and then we need to use the operations write
 you need to find the file (look in the table etc) then the ReadBlock() oparations has to read every block of the file and therefore you have to know which block belongs to which file
 
 - **What has to be done if you want to access foo.txt randomly (seek())?** 
-
+you need to know where to jump, so you need to calcute the position
 
 - **What has to be done when the file size decreases? Especially take care if it needs fewer blocks** 
 you have to deallocate/free every block, that you dont need anymore, therefore you need to know which block belongs to the file we want to delete, so that the blocks can be used for new WriteBlock() operation
+
 - **What has to be done when a file is deleted?**
 you have to deallocate/free all blocks related to that file and remove the file from our table etc.
