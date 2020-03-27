@@ -9,7 +9,7 @@ Wir stellen die nötigen Blocks zur Verfügung und verknüpfen diese Blöcke eff
 Wir teilen die Blöcke in Unterblöcke und lesen Block für Block. 
 
 ## 4.) What has to be done if you want to access foo.txt randomly (seek())? 
-
+Anstatt die ganzen Files durchzuiterieren machen wir eine Berechnung um genau auf die Speicheradresse zu kommen. 
 
 ## 5.) What has to be done when the file size decreases? Especially take care if it needs fewer blocks
 Die Blöcke müssen frei gegeben werden.
