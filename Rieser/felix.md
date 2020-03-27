@@ -1,8 +1,8 @@
 ### What has to be done, when creating a file foo.txt?
-we need enough empty blocks and memory
+we need enough empty blocks and memory.
 
 ### What has to be done, when the file size has to be increased? Especially take care if it needs additional blocks
-you have to find an empty block and connect this one with the other blocks of your file
+you have to find an empty block and connect this one with the other blocks of your file.
 
 ### What has to be done if a file is read sequentially? 
 You have to locate the blocks of your file and read them in sequence.
@@ -14,4 +14,4 @@ search the blocks from foo.txt and go trough the block to the position which see
 If the block is not needed anymore, then you can make it empty and give it free.
 
 ### What has to be done when a file is deleted?
-you have to make all blocks from the deleted file writeable/empty
+you have to make all blocks from the deleted file writeable/empty.
