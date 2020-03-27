@@ -14,7 +14,7 @@ Wir müssen sich den zuletzgelesenen Block merken und dann auf den nächsten Blo
 Anstatt die ganzen Files durchzuiterieren machen wir eine Berechnung um genau auf die Speicheradresse zu kommen. 
 
 ## 5.) What has to be done when the file size decreases? Especially take care if it needs fewer blocks
-Die Blöcke müssen frei gegeben werden.
+Die Blöcke müssen frei gegeben werden. 
 
 ## 6.) What has to be done when a file is deleted?
-Der Speicherblock muss freigegeben werden. 
+Der Speicherblock muss freigegeben werden. und den Status auf frei umstellen,damit es für den Free Space Management bekannt ist.
