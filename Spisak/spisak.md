@@ -15,7 +15,7 @@ We may not read the blocks sequenteially from 1-8. We should read the blocks fro
 We need a method seek() to get easy and fast acces to this file and we must take care of where the blocks of the file beginns were the blocks are interrupted and where they continue.
 
 # What has to be done when the file size decreases? Especially take care if it needs fewer blocks
-We need to check which blocks are affected and free the affected blocks.  
+We need to check which blocks are affected and free the affected blocks. But if we just need to give a part free then we just give that part free.
 
 # What has to be done when a file is deleted?
 All affected blocks need to be freeed. The next time when some blocks would be needed the currently freeed blocks would be available now.
