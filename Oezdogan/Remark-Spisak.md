@@ -4,6 +4,8 @@ Bei viertens, wie genau erfolgt die Berechnung?
 
 Bei fuenftens, was passiert nach dem die Bloecke freigegebeb worden sind?
 
+Beim Letzten was passiert, wenn man mehrere Bloecke freigeben muesste?
+
 LG
 
 Patrick
