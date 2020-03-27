@@ -1,5 +1,5 @@
 # What has to be done, when creating a file foo.txt?
-We need enough blocks and a filesystem manager
+At first we need enough memory, and then we need to use the operations write block, therefore we need a file manager, to look which blocks are free. We also have to store the file in some kind of list, tree or any data storage to let the os know the file is where the file is.
 
 # What has to be done, when the file size has to be increased? Especially take care if it needs additional blocks
 We need new blocks that are free. If we create a file A and a File B and want to increase the filesize of a now we must take care of the fact that we can't take the next block that is after the last block that has been occupied for A, because this block is already occupied for B. So we have to occupy a new block or blocks after the last block for B and then we need to link the two blockqueues for A together
