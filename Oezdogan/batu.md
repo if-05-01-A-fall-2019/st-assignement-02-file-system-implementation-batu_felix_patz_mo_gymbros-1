@@ -17,4 +17,4 @@ Anstatt die ganzen Files durchzuiterieren machen wir eine Berechnung um genau au
 Die Blöcke müssen frei gegeben werden.
 
 ## 6.) What has to be done when a file is deleted?
-Der Speicherblock muss freigegeben werden.
+Der Speicherblock muss freigegeben werden. 
