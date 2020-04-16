@@ -20,7 +20,7 @@ Anstatt die ganzen Files durchzuiterieren machen wir eine Berechnung um genau au
 ## 5.) What has to be done when the file size decreases? Especially take care if it needs fewer blocks
 Die Blöcke müssen frei gegeben werden. 
 
-### //How can you free the blocks
+### //Wie werden die Blöcke freigegeben
 
 ## 6.) What has to be done when a file is deleted?
 Der Speicherblock muss freigegeben werden. und den Status auf frei umstellen,damit es für den Free Space Management bekannt ist. 
