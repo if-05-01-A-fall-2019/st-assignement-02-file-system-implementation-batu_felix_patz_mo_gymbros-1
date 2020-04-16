@@ -1,6 +1,6 @@
 # File Systems Implementation
 ## 1.) What has to be done, when creating a file foo.txt?
-Um ein File foo.txt zu speichern braucht man zuerst Speicherplatz und ein Verwaltungssystem für Files.//to implement a FS is your task?xD
+Um ein File foo.txt zu speichern braucht man zuerst Speicherplatz und ein Verwaltungssystem für Files.//how would you implement your FS?
 
 ## 2.) What has to be done, when the file size has to be increased? Especially take care if it needs additional blocks
 Wir stellen die nötigen Blocks zur Verfügung und verknüpfen diese Blöcke effizient(Free Space Management).
@@ -17,4 +17,4 @@ Anstatt die ganzen Files durchzuiterieren machen wir eine Berechnung um genau au
 Die Blöcke müssen frei gegeben werden.**//Again how would you know which blocks belong to the file**
 
 ## 6.) What has to be done when a file is deleted?
-Der Speicherblock muss freigegeben werden. und den Status auf frei umstellen,damit es für den Free Space Management bekannt ist.**//inaccurate again**
+Der Speicherblock muss freigegeben werden. und den Status auf frei umstellen,damit es für den Free Space Management bekannt ist.**//Again how do you know whixh blocks belong to the file**
