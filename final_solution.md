@@ -22,4 +22,4 @@ You need to know where to jump, so you need to calcute the position(position/siz
 you have to deallocate/free every block, that you dont need anymore, you have to check which blocks you need to delete (e.g. with an ID), so that the blocks can be used for new WriteBlock() operation. But if you just need to give a part free, then you just give that part free.
 
 - **What has to be done when a file is deleted?**
-you have to deallocate/free all blocks related to that file, jump from block to block with hasNext and overwrite it (e.g. with 0) and remove the file from our table etc.
+you have to deallocate/free all blocks related to that file, jump from block to block with hasNext and overwrite it (e.g. with 0) and remove the file from our table etc. The next time when some blocks would be needed the currently freeed blocks would be available now.
