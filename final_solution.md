@@ -16,7 +16,7 @@ first of all we need to check if theres enough memory, and then we need to split
 you need to find the file (look in the table to find the first block) then the ReadBlock() oparations has to read every block of the file and tjump from block to block with hasNext etc.
 
 - **What has to be done if you want to access foo.txt randomly (seek())?** 
-you need to know where to jump, so you need to calcute the position(position/size)
+You need to know where to jump, so you need to calcute the position(position/size). We need a method seek() to get easy and fast acces to this file and we must take care of where the blocks of the file beginns were the blocks are interrupted and where they continue.
 
 - **What has to be done when the file size decreases? Especially take care if it needs fewer blocks** 
 you have to deallocate/free every block, that you dont need anymore, you have to check which blocks you need to delete (e.g. with an ID), so that the blocks can be used for new WriteBlock() operation
