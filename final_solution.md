@@ -13,7 +13,7 @@ first of all we need to check if theres enough memory, and then we need to split
  you have to look for the next free blocks and set hasNext of the last block to the adres of the next appending block
  
 - **What has to be done if a file is read sequentially?** 
-you need to find the file (look in the table to find the first block) then the ReadBlock() oparations has to read every block of the file and tjump from block to block with hasNext etc.
+you need to find the file (look in the table to find the first block) then the ReadBlock() oparations has to read every block of the file in the correct order.
 
 - **What has to be done if you want to access foo.txt randomly (seek())?** 
 You need to know where to jump, so you need to calcute the position(position/size). We need a method seek() to get easy and fast acces to this file and we must take care of where the blocks of the file beginns were the blocks are interrupted and where they continue.
