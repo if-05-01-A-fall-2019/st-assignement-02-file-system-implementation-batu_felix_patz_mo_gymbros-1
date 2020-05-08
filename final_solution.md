@@ -19,7 +19,7 @@ you need to find the file (look in the table to find the first block) then the R
 You need to know where to jump, so you need to calcute the position(position/size). We need a method seek() to get easy and fast acces to this file and we must take care of where the blocks of the file beginns were the blocks are interrupted and where they continue.
 
 - **What has to be done when the file size decreases? Especially take care if it needs fewer blocks** 
-you have to deallocate/free every block, that you dont need anymore, you have to check which blocks you need to delete (e.g. with an ID), so that the blocks can be used for new WriteBlock() operation
+you have to deallocate/free every block, that you dont need anymore, you have to check which blocks you need to delete (e.g. with an ID), so that the blocks can be used for new WriteBlock() operation. But if you just need to give a part free, then you just give that part free.
 
 - **What has to be done when a file is deleted?**
 you have to deallocate/free all blocks related to that file, jump from block to block with hasNext and overwrite it (e.g. with 0) and remove the file from our table etc.
