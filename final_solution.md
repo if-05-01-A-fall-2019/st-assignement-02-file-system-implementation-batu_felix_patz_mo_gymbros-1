@@ -6,7 +6,8 @@ Write down things to be done when to implement a file / a directory.
 Take into account that you have only the operations ReadBlock() and WriteBlock() on the disk.
 
 ### Required Tasks
-- **What has to be done, when creating a file foo.txt?** +
+- **What has to be done, when creating a file foo.txt?** 
+
 first of all we need to check if theres enough memory, and then we need to split the file in different chunks, next use the operation write block, therefore we need some kind of free space manager (e.g. every block has a bool value, true=free, false=used), to look what blocks are free. We also have to store the file in some kind of table or list or any information stotage to let the os know the file is here and where it is and store the first block related to the file (store in every block the adress of the next related block and also e.g a value hasNext and isEnd(?))
 
 - **What has to be done, when the file size has to be increased? Especially take care if it needs additional blocks** 
